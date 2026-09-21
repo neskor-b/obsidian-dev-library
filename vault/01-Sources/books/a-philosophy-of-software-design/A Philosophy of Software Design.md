@@ -11,7 +11,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-07-26
+updated: 2026-09-21
 ---
 
 # A Philosophy of Software Design
@@ -35,6 +35,8 @@ updated: 2026-07-26
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming|Розділ 3. Робочого коду недостатньо: стратегічне й тактичне програмування]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep|Розділ 4. Модулі мають бути глибокими]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage|Розділ 5. Приховування інформації та її витік]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
@@ -46,6 +48,11 @@ updated: 2026-07-26
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/abstractions-must-preserve-important-details|Абстракції мають зберігати важливі деталі]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/classitis-increases-system-complexity|Classitis збільшує складність системи]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-hiding-localizes-design-decisions|Приховування інформації локалізує проєктні рішення]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-leakage-couples-modules|Витік інформації зв’язує модулі спільним рішенням]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-temporal-decomposition-duplicates-knowledge|Часова декомпозиція дублює знання]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
 
 ## Робочі папки
 

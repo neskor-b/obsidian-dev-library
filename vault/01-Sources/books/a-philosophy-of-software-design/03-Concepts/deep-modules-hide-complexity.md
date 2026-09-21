@@ -14,8 +14,8 @@ tags:
   - source-note
   - concept
 created: 2026-07-26
-updated: 2026-07-26
-source: "chapter-4-excerpt"
+updated: 2026-09-21
+source: "chapter-4-and-5-excerpts"
 ---
 
 # Глибокі модулі приховують складність
@@ -41,7 +41,14 @@ source: "chapter-4-excerpt"
 > [!warning] Поверхневий модуль
 > Якщо інтерфейс майже повністю розкриває тривіальну реалізацію, модуль додає новий контракт, але не компенсує його прихованою складністю.
 
+## Уточнення з розділу 5
+
+Розділ 5 уточнює механізм поглиблення: модуль зосереджує проєктні рішення всередині й прибирає потребу знати їх із клієнтського коду. Об’єднання читання та розбору HTTP-запиту ілюструє збільшення глибини через локалізацію спільного знання.
+
 ## Джерела
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-main-idea|Розділ 5]]
+
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-main-idea]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-thesis-depth]]

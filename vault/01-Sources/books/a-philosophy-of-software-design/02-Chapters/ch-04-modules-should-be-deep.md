@@ -12,7 +12,7 @@ tags:
   - source-note
   - chapter
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-09-21
 source: "excerpt"
 ---
 
@@ -78,6 +78,8 @@ source: "excerpt"
 - Окремі code notes не створені: Unix I/O, garbage collection і Java streams у цьому розділі є порівняльними прикладами глибини API.
 
 ## Джерело та продовження
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage|Розділ 5. Приховування інформації та її витік]]
 
 - [[01-Sources/books/a-philosophy-of-software-design/A Philosophy of Software Design|Нотатка книги]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming|Розділ 3. Робочого коду недостатньо: стратегічне й тактичне програмування]]

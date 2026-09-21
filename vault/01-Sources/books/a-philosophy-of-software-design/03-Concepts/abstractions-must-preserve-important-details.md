@@ -14,8 +14,8 @@ tags:
   - source-note
   - concept
 created: 2026-07-26
-updated: 2026-07-26
-source: "chapter-4-excerpt"
+updated: 2026-09-21
+source: "chapter-4-and-5-excerpts"
 ---
 
 # Абстракції мають зберігати важливі деталі
@@ -40,7 +40,14 @@ source: "chapter-4-excerpt"
 > [!warning] Оманлива простота
 > Якщо для безпечного використання API все одно треба читати його реалізацію, важливі деталі не зникли — вони лише стали неочевидними.
 
+## Уточнення з розділу 5
+
+Розділ 5 окреслює межу приховування: параметри, які потрібно змінювати для різних сценаріїв, мають залишатися доступними, якщо модуль не може належно налаштуватися автоматично.
+
 ## Джерела
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-limits|Розділ 5]]
+
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-thesis-informal-interface]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-thesis-abstraction]]
