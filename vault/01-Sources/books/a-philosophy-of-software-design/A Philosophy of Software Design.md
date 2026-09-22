@@ -41,6 +41,8 @@ updated: 2026-09-22
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-07-different-layer-different-abstraction|Розділ 7. Різні шари — різні абстракції]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-08-pull-complexity-downwards|Розділ 8. Перенось складність усередину модуля]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
@@ -62,6 +64,8 @@ updated: 2026-09-22
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-layers-transform-abstractions|Шари мають перетворювати абстракції]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-shared-settings|Спільні налаштування без передачі через кожен метод]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-pull-complexity-downwards|Перенесення складності всередину модуля]]
 
 ## Робочі папки
 
