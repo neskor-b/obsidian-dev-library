@@ -2,7 +2,7 @@
 type: index
 scope: shared-concepts
 created: 2026-03-24
-updated: 2026-04-21
+updated: 2026-09-22
 ---
 
 # Спільні концепти
@@ -26,3 +26,4 @@ updated: 2026-04-21
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 - [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]]
+- [[02-Concepts/concept-decorator-wraps-behavior|Декоратор додає поведінку через обгортання]]

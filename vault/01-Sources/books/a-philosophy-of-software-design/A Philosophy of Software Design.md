@@ -39,6 +39,8 @@ updated: 2026-09-22
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper|Розділ 6. Модулі загального призначення є глибшими]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-07-different-layer-different-abstraction|Розділ 7. Різні шари — різні абстракції]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
@@ -57,6 +59,9 @@ updated: 2026-09-22
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-somewhat-general-purpose-interfaces|Помірно універсальний інтерфейс]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-layers-transform-abstractions|Шари мають перетворювати абстракції]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-shared-settings|Спільні налаштування без передачі через кожен метод]]
 
 ## Робочі папки
 
