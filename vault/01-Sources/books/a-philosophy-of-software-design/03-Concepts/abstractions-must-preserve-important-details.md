@@ -15,7 +15,7 @@ tags:
   - concept
 created: 2026-07-26
 updated: "2026-09-22"
-source: "chapter-4-and-5-excerpts"
+source: "chapter-4-5-and-6-excerpts"
 ---
 
 # Абстракції мають зберігати важливі деталі
@@ -59,7 +59,13 @@ source: "chapter-4-and-5-excerpts"
 > [!tip] Як перевірити
 > Чи можна правильно використати метод, прочитавши лише його опис? Якої інформації бракує для цього?
 
+## Уточнення з розділу 6
+
+Метод `backspace(cursor)` у текстовому класі приховує рішення про те, який символ видаляти. Але це рішення потрібне розробнику інтерфейсу користувача. Виклик `text.delete(text.changePosition(cursor, -1), cursor)` явно показує вибір діапазону там, де визначено поведінку клавіші. Текстовий клас приховує механізм зміни тексту, а правило дії лишається видимим його власнику.
+
 ## Джерела
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper#^aphsd-ch06-false-abstraction|Розділ 6]]
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-limits|Розділ 5]]
 

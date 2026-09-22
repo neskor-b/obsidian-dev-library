@@ -11,7 +11,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-09-21
+updated: 2026-09-22
 ---
 
 # A Philosophy of Software Design
@@ -37,6 +37,8 @@ updated: 2026-09-21
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage|Розділ 5. Приховування інформації та її витік]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper|Розділ 6. Модулі загального призначення є глибшими]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
@@ -53,6 +55,8 @@ updated: 2026-09-21
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-leakage-couples-modules|Витік інформації зв’язує модулі спільним рішенням]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-temporal-decomposition-duplicates-knowledge|Часова декомпозиція дублює знання]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-somewhat-general-purpose-interfaces|Помірно універсальний інтерфейс]]
 
 ## Робочі папки
 

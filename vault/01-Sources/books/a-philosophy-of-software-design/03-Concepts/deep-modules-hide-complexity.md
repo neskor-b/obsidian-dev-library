@@ -15,7 +15,7 @@ tags:
   - concept
 created: 2026-07-26
 updated: "2026-09-22"
-source: "chapter-4-and-5-excerpts"
+source: "chapter-4-5-and-6-excerpts"
 ---
 
 # Глибокі модулі приховують складність
@@ -66,7 +66,13 @@ int page = request.getIntParameter("page");
 > [!tip] Як перевірити
 > Яку роботу більше не потрібно робити в інших частинах програми завдяки цьому модулю?
 
+## Уточнення з розділу 6
+
+Загальна операція `delete(start, end)` замінює кілька вузьких методів для Backspace, Delete і виділення. Інтерфейс стає меншим, зберігаючи потрібні можливості. Проте одного методу для видалення одного символу недостатньо: якщо клієнтам доводиться писати цикли для діапазонів, модуль переклав забагато роботи назовні. Глибину слід оцінювати разом зі зручністю поточних сценаріїв.
+
 ## Джерела
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper#^aphsd-ch06-text-api|Розділ 6]]
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-main-idea|Розділ 5]]
 
