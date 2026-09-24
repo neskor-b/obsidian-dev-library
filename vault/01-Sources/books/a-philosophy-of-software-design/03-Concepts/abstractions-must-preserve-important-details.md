@@ -74,7 +74,7 @@ source: "chapter-4-5-and-6-excerpts"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[02-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 
 ## Пов'язаний код
 

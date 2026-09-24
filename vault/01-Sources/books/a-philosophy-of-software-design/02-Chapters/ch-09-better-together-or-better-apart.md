@@ -231,7 +231,7 @@ class History {
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-leakage-couples-modules|Витік інформації зв'язує модулі спільним рішенням]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper|Розділ 6. Модулі загального призначення є глибшими]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[02-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
 - [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]] — та сама ідея "групуй те, що змінюється разом", але сформульована через `REP`/`CCP`/`CRP` у Clean Architecture.
 

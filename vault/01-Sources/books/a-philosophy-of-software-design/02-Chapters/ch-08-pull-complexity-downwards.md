@@ -117,7 +117,7 @@ source: chapter-8-excerpt
 ## Пов’язані концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[02-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 
 ## Джерело та продовження
 

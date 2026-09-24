@@ -29,3 +29,4 @@ updated: 2026-09-22
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 - [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]]
 - [[02-Concepts/concept-decorator-wraps-behavior|Декоратор додає поведінку через обгортання]]
+- [[02-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]

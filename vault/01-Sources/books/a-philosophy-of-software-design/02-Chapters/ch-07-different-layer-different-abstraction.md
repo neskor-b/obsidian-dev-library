@@ -97,5 +97,5 @@ flowchart TB
 ## Джерело та зв’язки
 
 - [[01-Sources/books/a-philosophy-of-software-design/A Philosophy of Software Design|A Philosophy of Software Design]], розділ 7. Приклади спрощено для цієї нотатки.
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[02-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper|Розділ 6. Модулі загального призначення є глибшими]]

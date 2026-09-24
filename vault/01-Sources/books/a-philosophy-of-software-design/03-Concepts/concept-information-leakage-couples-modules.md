@@ -59,5 +59,5 @@ source: "chapter-5-and-9-excerpts"
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-temporal-decomposition-duplicates-knowledge|Часова декомпозиція дублює знання]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[02-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart|Розділ 9. Разом чи окремо?]]

@@ -1,9 +1,6 @@
 ---
 type: concept
-scope: "source-local"
-source_type: "books"
-source_slug: "a-philosophy-of-software-design"
-source_title: "A Philosophy of Software Design"
+scope: "shared-evergreen"
 sources:
   - "a-philosophy-of-software-design"
 title: "Глибокі модулі приховують складність"
@@ -14,8 +11,8 @@ tags:
   - source-note
   - concept
 created: 2026-07-26
-updated: "2026-09-24"
-source: "chapter-4-5-6-7-and-9-excerpts"
+updated: 2026-09-24
+source: "synthesis"
 ---
 
 # Глибокі модулі приховують складність
@@ -77,6 +74,7 @@ int page = request.getIntParameter("page");
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/abstractions-must-preserve-important-details|Абстракції мають зберігати важливі деталі]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-thesis-classitis|Розділ 4 — Classitis]]
+- [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]] — та сама ідея "приховати внутрішню складність за стабільною межею", застосована до компонентів, а не до модулів.
 
 ## Пов'язаний код
 
