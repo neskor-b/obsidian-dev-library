@@ -30,6 +30,35 @@ Red flags у цій книзі - це впізнавані симптоми то
 
 Новачок рідко одразу бачить красивий дизайн, зате може навчитися помічати тривожні сигнали. Через це red flags стають практичним мостом між абстрактними принципами й щоденною роботою: вони вчать розпізнавати момент, коли варто не латати код, а переосмислити його форму.
 
+## Приклад: Repetition у дії
+
+Дві форми містять однакове правило:
+
+```javascript
+function validateSignupEmail(email) {
+  if (!email.includes('@')) throw new Error('Invalid email');
+}
+function validateInviteEmail(email) {
+  if (!email.includes('@')) throw new Error('Invalid email');
+}
+```
+
+Це сигнал `Repetition`: зміна спільного правила вимагає синхронної правки в обох місцях. Якщо вимоги форм справді однакові, правило можна винести в одну функцію:
+
+```javascript
+function hasAtSign(email) { return email.includes('@'); }
+function validateSignupEmail(email) {
+  if (!hasAtSign(email)) throw new Error('Invalid email');
+}
+function validateInviteEmail(email) {
+  if (!hasAtSign(email)) throw new Error('Invalid email');
+}
+```
+
+Спільна функція тут перевіряє лише наявність `@`, а не повну коректність адреси. Якщо правила двох форм розійдуться, їх слід знову розділити відповідно до різних вимог.
+
+^aphsd-red-flags-example-repetition
+
 ## Ознаки в коді
 
 - Пояснення поведінки вимагає дедалі більше винятків, special cases і фраз на кшталт "окрім випадку, коли...".

@@ -9,7 +9,7 @@ title: "Типові значення приховують рідкісні на
 aliases: ["Defaults and overexposure"]
 tags: ["source-note", "concept"]
 created: "2026-09-21"
-updated: "2026-09-22"
+updated: 2026-09-24"
 source: "chapter-5-and-8-excerpts"
 ---
 
@@ -34,6 +34,22 @@ source: "chapter-5-and-8-excerpts"
 Типове значення може бути не лише статичним, а й обчисленим: [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-08-pull-complexity-downwards#^aphsd-ch08-configuration|розділ 8]] показує модуль, який сам вимірює умови (наприклад, швидкість відповідей) і на основі цього обирає значення — це стійкіше за ручне налаштування, яке може застаріти. Явний параметр лишається доречним, коли рішення залежить від знань, недоступних модулю.
 
 ^aphsd-defaults-adaptive
+
+## Власний приклад
+
+```typescript
+function connect(host: string, port = 5432, timeoutMs = 30_000) {
+  // підключення до бази даних
+}
+
+connect("db.internal");              // типовий порт і timeout
+connect("db.internal", 5433);        // інший порт
+connect("db.internal", 5432, 5_000); // коротший timeout
+```
+
+Якщо більшість викликів користується типовим портом і часом очікування, їм досить передати адресу. Незвичний сценарій може перевизначити потрібне значення. Типові значення прибирають зайві параметри зі звичайного виклику, але мають відповідати реальним потребам системи.
+
+^aphsd-defaults-own-example
 
 ## Ознаки в коді
 
