@@ -20,152 +20,155 @@ source: "synthesis"
 
 Уявімо запит на фічу: система вміє показувати фінансовий звіт у web-інтерфейсі, і продуктова команда просить додати `CSV export`, щоб фінансовий відділ міг вивантажувати дані в Excel. Спершу фіксуємо policy: use case має "зібрати дані звіту і відрендерити їх у вибраному форматі".
 
-```java showLineNumbers
-public record ReportData(String title, BigDecimal revenue) {}
+```typescript showLineNumbers
+// Десятковий рядок зберігає точність суми з БД, наприклад "1234.56".
+// У цьому сценарії суму лише передаємо й форматуємо, не обчислюємо.
+type DecimalAmount = string;
 
-public record RenderedReport(
-    String fileName,
-    String contentType,
-    byte[] content
-) {}
+type ReportData = Readonly<{
+  title: string;
+  revenue: DecimalAmount;
+}>;
 
-public interface ReportDataGateway {
-    ReportData loadReport(String reportId);
+type RenderedReport = Readonly<{
+  fileName: string;
+  contentType: string;
+  content: Uint8Array;
+}>;
+
+interface ReportDataGateway {
+  loadReport(reportId: string): Promise<ReportData>;
 }
 
-public interface ReportRenderer {
-    RenderedReport render(ReportData data);
+interface ReportRenderer {
+  render(data: ReportData): RenderedReport;
 }
 
-public interface ReportRendererRegistry {
-    ReportRenderer forFormat(String format);
+interface ReportRendererRegistry {
+  forFormat(format: string): ReportRenderer;
 }
 
-public interface GenerateFinancialReport {
-    RenderedReport generate(String reportId, String format);
+interface GenerateFinancialReport {
+  generate(reportId: string, format: string): Promise<RenderedReport>;
 }
 
-public interface PostgresClient {
-    Row querySingle(String sql, String reportId);
+type ReportRow = Readonly<{
+  title: string;
+  revenue: DecimalAmount;
+}>;
+
+// Адаптер драйвера повертає один рядок або відхиляє Promise,
+// якщо звіт не знайдений чи запит завершився помилкою.
+interface PostgresClient {
+  querySingle(sql: string, params: readonly string[]): Promise<ReportRow>;
 }
 
-public record Row(String title, BigDecimal revenue) {}
+class FinancialReportInteractor implements GenerateFinancialReport {
+  constructor(
+    private readonly gateway: ReportDataGateway,
+    private readonly renderers: ReportRendererRegistry,
+  ) {}
 
-public final class FinancialReportInteractor implements GenerateFinancialReport {
-    private final ReportDataGateway gateway;
-    private final ReportRendererRegistry renderers;
-
-    public FinancialReportInteractor(
-        ReportDataGateway gateway,
-        ReportRendererRegistry renderers
-    ) {
-        this.gateway = gateway;
-        this.renderers = renderers;
-    }
-
-    @Override
-    public RenderedReport generate(String reportId, String format) {
-        ReportData data = gateway.loadReport(reportId);
-        ReportRenderer renderer = renderers.forFormat(format);
-        return renderer.render(data);
-    }
+  async generate(reportId: string, format: string): Promise<RenderedReport> {
+    const data = await this.gateway.loadReport(reportId);
+    const renderer = this.renderers.forFormat(format);
+    return renderer.render(data);
+  }
 }
 
-public final class HtmlReportRenderer implements ReportRenderer {
-    @Override
-    public RenderedReport render(ReportData data) {
-        return new RenderedReport("report.html", "text/html", renderHtml(data));
-    }
+// Реалізації форматування тут опущені: кожна повертає UTF-8 байти.
+// HTML-адаптер екранує текст, CSV-адаптер обробляє роздільники й лапки.
+declare function renderHtml(data: ReportData): Uint8Array;
+declare function renderCsv(data: ReportData): Uint8Array;
+
+class HtmlReportRenderer implements ReportRenderer {
+  render(data: ReportData): RenderedReport {
+    return {
+      fileName: "report.html",
+      contentType: "text/html; charset=utf-8",
+      content: renderHtml(data),
+    };
+  }
 }
 
-public final class CsvReportRenderer implements ReportRenderer {
-    @Override
-    public RenderedReport render(ReportData data) {
-        return new RenderedReport("report.csv", "text/csv", renderCsv(data));
-    }
+class CsvReportRenderer implements ReportRenderer {
+  render(data: ReportData): RenderedReport {
+    return {
+      fileName: "report.csv",
+      contentType: "text/csv; charset=utf-8",
+      content: renderCsv(data),
+    };
+  }
 }
 
-public final class PostgresReportDataGateway implements ReportDataGateway {
-    private final PostgresClient postgres;
+class PostgresReportDataGateway implements ReportDataGateway {
+  constructor(private readonly postgres: PostgresClient) {}
 
-    public PostgresReportDataGateway(PostgresClient postgres) {
-        this.postgres = postgres;
-    }
-
-    @Override
-    public ReportData loadReport(String reportId) {
-        Row row = postgres.querySingle(
-            "select title, revenue from reports where id = ?",
-            reportId
-        );
-        return new ReportData(row.title(), row.revenue());
-    }
+  async loadReport(reportId: string): Promise<ReportData> {
+    const row = await this.postgres.querySingle(
+      "select title, revenue from reports where id = $1",
+      [reportId],
+    );
+    return { title: row.title, revenue: row.revenue };
+  }
 }
 
-public final class InMemoryReportRendererRegistry implements ReportRendererRegistry {
-    private final Map<String, ReportRenderer> renderers;
+class InMemoryReportRendererRegistry implements ReportRendererRegistry {
+  constructor(private readonly renderers: ReadonlyMap<string, ReportRenderer>) {}
 
-    public InMemoryReportRendererRegistry(Map<String, ReportRenderer> renderers) {
-        this.renderers = renderers;
+  forFormat(format: string): ReportRenderer {
+    const renderer = this.renderers.get(format);
+    if (!renderer) {
+      throw new Error(`Unsupported format: ${format}`);
     }
-
-    @Override
-    public ReportRenderer forFormat(String format) {
-        ReportRenderer renderer = renderers.get(format);
-
-        if (renderer == null) {
-            throw new IllegalArgumentException("Unsupported format: " + format);
-        }
-
-        return renderer;
-    }
+    return renderer;
+  }
 }
 
-public final class ReportsController {
-    private final GenerateFinancialReport generateFinancialReport;
+type HttpResponse = Readonly<{
+  status: number;
+  headers: Readonly<Record<string, string>>;
+  body: Uint8Array;
+}>;
 
-    public ReportsController(GenerateFinancialReport generateFinancialReport) {
-        this.generateFinancialReport = generateFinancialReport;
-    }
+class ReportsController {
+  constructor(private readonly generateFinancialReport: GenerateFinancialReport) {}
 
-    public HttpResponse download(String reportId, String format) {
-        RenderedReport report = generateFinancialReport.generate(reportId, format);
-        return HttpResponse.file(
-            report.fileName(),
-            report.contentType(),
-            report.content()
-        );
-    }
+  async download(reportId: string, format: string): Promise<HttpResponse> {
+    const report = await this.generateFinancialReport.generate(reportId, format);
+    return {
+      status: 200,
+      headers: {
+        "Content-Type": report.contentType,
+        "Content-Disposition": `attachment; filename="${report.fileName}"`,
+      },
+      body: report.content,
+    };
+  }
 }
 
-public final class Application {
-    public static void main(String[] args) {
-        PostgresClient postgresClient = new RealPostgresClient();
+// Composition root: конкретний клієнт БД надходить із запуску застосунку.
+function createReportsController(postgresClient: PostgresClient): ReportsController {
+  const gateway = new PostgresReportDataGateway(postgresClient);
+  const registry = new InMemoryReportRendererRegistry(
+    new Map<string, ReportRenderer>([
+      ["html", new HtmlReportRenderer()],
+      ["csv", new CsvReportRenderer()],
+    ]),
+  );
+  const useCase = new FinancialReportInteractor(gateway, registry);
+  return new ReportsController(useCase);
+}
 
-        ReportDataGateway gateway =
-            new PostgresReportDataGateway(postgresClient);
+// HTTP-сервер передає результат download у відповідь браузеру.
+// Це інфраструктурні залежності, реалізації яких у прикладі опущені.
+declare const postgresClient: PostgresClient;
+declare function sendToBrowser(response: HttpResponse): void;
 
-        ReportRenderer htmlRenderer = new HtmlReportRenderer();
-        ReportRenderer csvRenderer = new CsvReportRenderer();
-
-        ReportRendererRegistry registry =
-            new InMemoryReportRendererRegistry(
-                Map.of(
-                    "html", htmlRenderer,
-                    "csv", csvRenderer
-                )
-            );
-
-        GenerateFinancialReport useCase =
-            new FinancialReportInteractor(gateway, registry);
-
-        ReportsController controller =
-            new ReportsController(useCase);
-
-        HttpResponse response = controller.download("report-42", "csv");
-
-        sendToBrowser(response);
-    }
+async function main(): Promise<void> {
+  const controller = createReportsController(postgresClient);
+  const response = await controller.download("report-42", "csv");
+  sendToBrowser(response);
 }
 ```
 
@@ -193,15 +196,19 @@ sequenceDiagram
     Interactor->>Registry: forFormat("csv")
     Registry-->>Interactor: CsvReportRenderer
     Interactor->>Renderer: render(reportData)
-    Renderer-->>Interactor: RenderedReport("report.csv", "text/csv", bytes)
+    Renderer-->>Interactor: RenderedReport { fileName, contentType, content }
     Interactor-->>Controller: RenderedReport
-    Controller->>Controller: HttpResponse.file(fileName, contentType, content)
+    Controller->>Controller: Build HttpResponse { status, headers, body }
     Controller-->>Client: HTTP response with file download
 ```
 
 ## Пояснення
 
-Зверху оголошені контракти (`ReportDataGateway`, `ReportRenderer`, `ReportRendererRegistry`, `GenerateFinancialReport`), нижче йдуть concrete-реалізації, а в самому кінці `Application` збирає все докупи. Кожен принцип проявляється так:
+Зверху оголошені контракти (`ReportDataGateway`, `ReportRenderer`, `ReportRendererRegistry`, `GenerateFinancialReport`), нижче йдуть concrete-реалізації, а в самому кінці `createReportsController` збирає все докупи. Читання з БД асинхронне, тому `Promise` проходить через gateway, interactor і controller; форматування вже завантажених даних лишається синхронним. `Readonly` обмежує присвоєння полям на рівні типів, але не робить `Uint8Array` незмінним під час виконання.
+
+`declare` описує типи залежностей, реалізації яких опущені, а не створює їх. Для запуску потрібні функції форматування, адаптер драйвера Postgres і HTTP-сервер; сервер також перетворює помилки на HTTP-відповіді. `main` показує один виклик сценарію. Грошова сума передається десятковим рядком без втрати точності; для арифметики потрібна окрема точна модель, а не перетворення на `number`.
+
+Кожен принцип проявляється так:
 
 - `SRP`: `FinancialReportInteractor` оркеструє use case, `PostgresReportDataGateway` читає дані, `CsvReportRenderer` відповідає за формат, а `ReportsController` за HTTP. У кожного модуля свій актор змін.
 - `OCP`: щоб додати `XLSX`-експорт, ми створюємо `XlsxReportRenderer` і реєструємо його на периферії. Ядро use case не треба переписувати.
@@ -213,7 +220,7 @@ sequenceDiagram
 
 ## Ризики або smells
 
-- Поганий перший імпульс на цю ж фічу — один клас `ReportsService` з `if (format.equals("csv"))` поруч із `deleteReport()` і `reindexReports()` — змішує читання з Postgres, вибір формату, HTTP-відповідь, аудит експорту й admin-методи в одному місці.
+- Поганий перший імпульс на цю ж фічу — один клас `ReportsService` з `if (format === "csv")` поруч із `deleteReport()` і `reindexReports()` — змішує читання з Postgres, вибір формату, HTTP-відповідь, аудит експорту й admin-методи в одному місці.
 - Такий код "здається швидким", але саме він робить наступний формат дорожчим за попередній: підміна реалізації вимагає редагувати той самий `if/else`-ланцюг, ризикуючи зачепити вже працюючі формати.
 
 ## Пов'язані концепти
