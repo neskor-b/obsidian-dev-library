@@ -11,7 +11,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-09-22
+updated: 2026-09-24
 ---
 
 # A Philosophy of Software Design
@@ -43,29 +43,21 @@ updated: 2026-09-22
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-08-pull-complexity-downwards|Розділ 8. Перенось складність усередину модуля]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart|Розділ 9. Разом чи окремо?]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/modular-design-encapsulates-complexity|Модульний дизайн інкапсулює складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/red-flags-guide-design-judgment|Red flags спрямовують дизайнерське судження]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-symptoms|Симптоми складності]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/dependencies-and-obscurity|Залежності та неочевидність породжують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-accumulates-incrementally|Складність накопичується інкрементально]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/abstractions-must-preserve-important-details|Абстракції мають зберігати важливі деталі]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/classitis-increases-system-complexity|Classitis збільшує складність системи]]
-
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-hiding-localizes-design-decisions|Приховування інформації локалізує проєктні рішення]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-leakage-couples-modules|Витік інформації зв’язує модулі спільним рішенням]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-temporal-decomposition-duplicates-knowledge|Часова декомпозиція дублює знання]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
-
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-somewhat-general-purpose-interfaces|Помірно універсальний інтерфейс]]
-
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-layers-transform-abstractions|Шари мають перетворювати абстракції]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-shared-settings|Спільні налаштування без передачі через кожен метод]]
-
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-pull-complexity-downwards|Перенесення складності всередину модуля]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-combine-or-separate-code|Об'єднувати чи розділяти код]]
 
 ## Робочі папки
 

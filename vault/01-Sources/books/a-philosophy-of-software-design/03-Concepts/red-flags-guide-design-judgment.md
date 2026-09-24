@@ -14,7 +14,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-03-25
+updated: 2026-09-24
 source: "chapter-1-excerpt"
 ---
 
@@ -35,16 +35,23 @@ Red flags у цій книзі - це впізнавані симптоми то
 - Пояснення поведінки вимагає дедалі більше винятків, special cases і фраз на кшталт "окрім випадку, коли...".
 - Щоб безпечно змінити локальну частину системи, потрібно знати багато неочевидних деталей з інших модулів.
 - Code review регулярно знаходить одну й ту саму структурну проблему в різних місцях.
+- **Повторення (Repetition, розділ 9.3):** той самий (або майже той самий) фрагмент коду повторюється знову й знову — сигнал, що правильну абстракцію ще не знайдено.
+- **Змішування загального та спеціального (Special-General Mixture, розділ 9.4):** загальний механізм містить код, спеціалізований під один конкретний випадок використання; це створює витік інформації між механізмом і випадком використання.
+- **Зрощені методи (Conjoined Methods, розділ 9.8):** неможливо зрозуміти реалізацію одного методу чи фрагмента, не читаючи інший — вони піддаються розумінню лише разом.
 
 ## Джерела
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-red-flags]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-quote-red-flags]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-duplication|Розділ 9.3 — Repetition]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-general-special|Розділ 9.4 — Special-General Mixture]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-conjoined-methods-flag|Розділ 9.8 — Conjoined Methods]]
 
 ## Пов'язані концепти
 
 - [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-combine-or-separate-code|Об'єднувати чи розділяти код]]
 
 ## Пов'язаний код
 

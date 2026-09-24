@@ -48,7 +48,6 @@ source: "excerpt"
 - [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-- [[01-Sources/books/clean-architecture/03-Concepts/components-are-units-of-deployment|Компоненти є одиницями розгортання]]
 
 ## Джерело та продовження
 

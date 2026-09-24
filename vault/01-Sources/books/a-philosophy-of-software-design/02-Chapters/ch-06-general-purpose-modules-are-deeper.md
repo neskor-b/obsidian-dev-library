@@ -243,10 +243,8 @@ function replaceAll(
 
 ## Пов’язані концепти
 
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-somewhat-general-purpose-interfaces|Помірно універсальний інтерфейс]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/abstractions-must-preserve-important-details|Абстракції мають зберігати важливі деталі]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-hiding-localizes-design-decisions|Приховування інформації локалізує проєктні рішення]]
 
 ## Джерело та продовження
 

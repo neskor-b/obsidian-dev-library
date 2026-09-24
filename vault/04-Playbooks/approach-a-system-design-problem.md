@@ -52,7 +52,7 @@ source: "system-design-handbook-guide"
 
 ## Пов'язані концепти
 
-- [[01-Sources/articles/system-design-handbook-system-design/03-Concepts/non-functional-requirements-shape-system-architecture|Нефункціональні вимоги формують архітектуру системи]]
+- [[01-Sources/articles/system-design-handbook-system-design/02-Notes/system-design-starts-with-requirements-and-trade-offs|System design починається з вимог і trade-offs]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 
 ## Джерела

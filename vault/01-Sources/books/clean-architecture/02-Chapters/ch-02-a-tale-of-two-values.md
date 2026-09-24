@@ -57,11 +57,8 @@ source: "excerpt"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
-- [[01-Sources/books/clean-architecture/03-Concepts/architecture-is-important-not-urgent|Архітектура важлива, але не термінова]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
-- [[01-Sources/books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
 
 ## Пов'язані приклади коду
 
@@ -73,6 +70,4 @@ source: "excerpt"
 
 ## Пов'язані нотатки
 
-- [[01-Sources/books/clean-architecture/03-Concepts/two-values-of-software#^clean-architecture-two-values-definition|Визначення двох цінностей ПЗ]]
-- [[01-Sources/books/clean-architecture/03-Concepts/architecture-is-important-not-urgent#^clean-architecture-important-not-urgent-definition|Визначення архітектури як важливого, але не термінового]]
 - [[02-Concepts/architecture-governs-cost-of-change#^architecture-cost-of-change-definition|Визначення архітектури як чинника вартості змін]]

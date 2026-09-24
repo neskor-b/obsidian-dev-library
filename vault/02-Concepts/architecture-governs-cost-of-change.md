@@ -46,9 +46,7 @@ source: "synthesis"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/two-values-of-software|Дві цінності програмного забезпечення]]
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
-- [[01-Sources/books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
 - [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
 

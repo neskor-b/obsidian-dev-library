@@ -159,6 +159,6 @@ TypeScript 5.0 запровадив підтримку нової моделі �
 
 ## Пов’язані концепти
 
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-layers-transform-abstractions|Шари мають перетворювати абстракції]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-07-different-layer-different-abstraction|Розділ 7. Різні шари — різні абстракції]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
 - [[02-Concepts/liskov-substitution-preserves-client-behavior|Підстановка має зберігати очікування клієнта]]

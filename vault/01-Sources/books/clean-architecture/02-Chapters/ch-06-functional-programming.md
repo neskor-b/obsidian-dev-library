@@ -67,8 +67,6 @@ source: "excerpt"
 ## Пов'язані концепти
 
 - [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems|Незмінність прибирає цілі класи проблем конкурентності]]
-- [[01-Sources/books/clean-architecture/03-Concepts/segregation-of-mutability-localizes-concurrency-risk|Сегрегація змінності локалізує ризики конкурентності]]
-- [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state|Event sourcing зберігає транзакції, а не стан]]
 - [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
 
 ## Джерело та продовження
@@ -79,5 +77,3 @@ source: "excerpt"
 ## Пов'язані нотатки
 
 - [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems#^clean-architecture-immutability-concurrency-definition|Локальний концепт про незмінність і concurrency]]
-- [[01-Sources/books/clean-architecture/03-Concepts/segregation-of-mutability-localizes-concurrency-risk#^clean-architecture-segregation-mutability-definition|Локальний концепт про ізоляцію мутації]]
-- [[01-Sources/books/clean-architecture/03-Concepts/event-sourcing-stores-transactions-not-state#^clean-architecture-event-sourcing-definition|Локальний концепт про event sourcing]]

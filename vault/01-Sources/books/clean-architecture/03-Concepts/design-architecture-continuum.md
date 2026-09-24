@@ -43,7 +43,6 @@ source: "chapter-1-excerpt"
 ## Пов'язані концепти
 
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-- [[01-Sources/books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
 
 ## Пов'язаний код
 

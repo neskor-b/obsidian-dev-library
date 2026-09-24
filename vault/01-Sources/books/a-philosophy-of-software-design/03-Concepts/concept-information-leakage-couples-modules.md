@@ -9,8 +9,8 @@ title: "Витік інформації зв’язує модулі спіль�
 aliases: ["Information leakage"]
 tags: ["source-note", "concept"]
 created: "2026-09-21"
-updated: "2026-09-22"
-source: "chapter-5-excerpt"
+updated: "2026-09-24"
+source: "chapter-5-and-9-excerpts"
 ---
 
 # Витік інформації зв’язує модулі спільним рішенням
@@ -54,13 +54,18 @@ source: "chapter-5-excerpt"
 > [!tip] Як перевірити
 > Які частини програми доведеться змінити разом, якщо зміниться ця внутрішня деталь?
 
+## Уточнення з розділу 9
+
+Той самий приклад читання й розбору HTTP-запиту повертається в розділі 9 як аргумент "на користь об'єднання": метод читання не міг знайти кінець запиту, не виконавши більшу частину розбору (щоб знайти заголовок із довжиною тіла). Спільна залежність від формату запиту — це і є витік інформації; об'єднання методів прибрало проміжний інтерфейс і зробило код коротшим.
+
 ## Джерела
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-leakage|Розділ 5 — Information leakage]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-shared-information|Розділ 9.1 — об'єднання через спільну інформацію]]
 
 ## Пов’язані концепти
 
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-information-hiding-localizes-design-decisions|Приховування інформації локалізує проєктні рішення]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-temporal-decomposition-duplicates-knowledge|Часова декомпозиція дублює знання]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/deep-modules-hide-complexity|Глибокі модулі приховують складність]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-combine-or-separate-code|Об'єднувати чи розділяти код]]

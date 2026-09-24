@@ -79,7 +79,6 @@ flowchart LR
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/components-are-units-of-deployment|Компоненти є одиницями розгортання]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
@@ -93,5 +92,4 @@ flowchart LR
 
 ## Пов'язані нотатки
 
-- [[01-Sources/books/clean-architecture/03-Concepts/components-are-units-of-deployment#^clean-architecture-components-definition|Локальний концепт про компонент як одиницю розгортання]]
 - [[02-Concepts/plugin-architecture-via-polymorphism#^plugin-architecture-via-polymorphism-definition|Спільний концепт про plugin architecture]]

@@ -51,7 +51,6 @@ source: "excerpt"
 ## Пов'язані концепти
 
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
-- [[01-Sources/books/clean-architecture/03-Concepts/cleanliness-preserves-productivity|Охайність зберігає продуктивність]]
 
 ## Пов'язані приклади коду
 
@@ -64,4 +63,3 @@ source: "excerpt"
 ## Пов'язані нотатки
 
 - [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum#^clean-architecture-design-continuum-definition|Визначення єдності дизайну й архітектури]]
-- [[01-Sources/books/clean-architecture/03-Concepts/cleanliness-preserves-productivity#^clean-architecture-cleanliness-productivity-definition|Визначення зв'язку між охайністю й продуктивністю]]

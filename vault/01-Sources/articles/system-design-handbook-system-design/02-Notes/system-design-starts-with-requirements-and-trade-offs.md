@@ -44,7 +44,6 @@ System design починається не з вибору бази даних а
 
 ## Пов'язані концепти
 
-- [[01-Sources/articles/system-design-handbook-system-design/03-Concepts/non-functional-requirements-shape-system-architecture|Нефункціональні вимоги формують архітектуру системи]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 
 ## Пов'язаний код
@@ -58,6 +57,5 @@ System design починається не з вибору бази даних а
 
 ## Пов'язані нотатки
 
-- [[01-Sources/articles/system-design-handbook-system-design/03-Concepts/non-functional-requirements-shape-system-architecture#^sdh-nfr-shape-architecture-definition|Визначення ролі нефункціональних вимог]]
 - [[02-Concepts/architecture-governs-cost-of-change#^architecture-cost-of-change-definition|Визначення архітектури як фактора вартості змін]]
 

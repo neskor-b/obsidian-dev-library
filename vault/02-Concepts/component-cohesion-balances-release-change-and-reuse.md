@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-04-21
-updated: 2026-04-21
+updated: 2026-09-24
 source: "synthesis"
 ---
 
@@ -51,11 +51,11 @@ source: "synthesis"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/components-are-units-of-deployment|Компоненти є одиницями розгортання]]
 - [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - [[02-Concepts/interface-segregation-avoids-dependencies-on-unused-operations|ISP ізолює клієнтів від невикористаних операцій]]
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
+- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-combine-or-separate-code|Об'єднувати чи розділяти код]] — та сама ідея "групуй те, що змінюється разом", без формального `REP`/`CCP`/`CRP`-апарату.
 
 ## Пов'язаний фрагмент
 

@@ -34,7 +34,6 @@ source: "https://www.systemdesignhandbook.com/guides/system-design/"
 
 ## Локальні концепти
 
-- [[01-Sources/articles/system-design-handbook-system-design/03-Concepts/non-functional-requirements-shape-system-architecture|Нефункціональні вимоги формують архітектуру системи]]
 
 ## Пов'язані playbooks
 

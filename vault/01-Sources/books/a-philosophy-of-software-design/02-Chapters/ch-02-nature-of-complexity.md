@@ -60,8 +60,6 @@ source: "excerpt"
 ## Пов'язані концепти
 
 - [[02-Concepts/complexity-is-the-central-design-problem|Складність є центральною проблемою дизайну ПЗ]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-symptoms|Симптоми складності]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/dependencies-and-obscurity|Залежності та неочевидність породжують складність]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/complexity-accumulates-incrementally|Складність накопичується інкрементально]]
 
 ## Пов'язані приклади коду
