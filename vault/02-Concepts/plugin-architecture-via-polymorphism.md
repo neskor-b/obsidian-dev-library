@@ -11,7 +11,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-04-18
+updated: 2026-09-24
 source: "synthesis"
 ---
 
@@ -26,6 +26,33 @@ source: "synthesis"
 ## Чому це важливо
 
 Це перетворює "деталі" з того, що диктує форму всієї системи, на те, що можна замінювати без руйнування основних правил. Така архітектура зменшує coupling до технологій і дає команді свободу еволюціонувати інфраструктуру окремо від політик. Саме тому `UI` і сховище мають бути плагінами до бізнес-правил, а не їхнім центром тяжіння.
+
+## Приклад
+
+```typescript
+interface PaymentGateway {
+  charge(amountCents: number): Promise<void>;
+}
+class StripeGateway implements PaymentGateway {
+  async charge(amountCents: number): Promise<void> { /* Stripe API */ }
+}
+class PaypalGateway implements PaymentGateway {
+  async charge(amountCents: number): Promise<void> { /* PayPal API */ }
+}
+class CheckoutService {
+  constructor(private readonly gateway: PaymentGateway) {}
+  async completeOrder(amountCents: number): Promise<void> {
+    await this.gateway.charge(amountCents);
+  }
+}
+
+const checkout = new CheckoutService(new StripeGateway());
+// У місці складання можна передати new PaypalGateway() без зміни CheckoutService.
+```
+
+`CheckoutService` залежить від `PaymentGateway`. Конкретну реалізацію передає код складання застосунку, тому заміна провайдера не вимагає правки в місці використання платежу. Новий адаптер має виконати той самий контракт і врахувати поведінку помилок та ідемпотентності.
+
+^plugin-architecture-example
 
 ## Ознаки в коді
 
