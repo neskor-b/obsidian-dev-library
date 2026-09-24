@@ -18,3 +18,4 @@ updated: 2026-03-25
 ## Наявні мапи
 
 - [[03-Maps/solid-and-clean-architecture-principles|SOLID та принципи Clean Architecture]]
+- [[03-Maps/complexity-in-software-design|Складність у дизайні ПЗ]]
