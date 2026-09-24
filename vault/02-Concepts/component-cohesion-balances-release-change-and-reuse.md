@@ -55,7 +55,7 @@ source: "synthesis"
 - [[02-Concepts/interface-segregation-avoids-dependencies-on-unused-operations|ISP ізолює клієнтів від невикористаних операцій]]
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-combine-or-separate-code|Об'єднувати чи розділяти код]] — та сама ідея "групуй те, що змінюється разом", без формального `REP`/`CCP`/`CRP`-апарату.
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart|Розділ 9. Разом чи окремо?]] — та сама ідея "групуй те, що змінюється разом", без формального `REP`/`CCP`/`CRP`-апарату.
 
 ## Пов'язаний фрагмент
 

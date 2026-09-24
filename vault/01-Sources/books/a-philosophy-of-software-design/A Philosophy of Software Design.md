@@ -57,7 +57,6 @@ updated: 2026-09-24
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-temporal-decomposition-duplicates-knowledge|Часова декомпозиція дублює знання]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-defaults-hide-uncommon-options|Типові значення приховують рідкісні налаштування]]
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-shared-settings|Спільні налаштування без передачі через кожен метод]]
-- [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/concept-combine-or-separate-code|Об'єднувати чи розділяти код]]
 
 ## Робочі папки
 
