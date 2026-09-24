@@ -12,7 +12,7 @@ tags:
   - source-note
   - chapter
 created: 2026-07-26
-updated: 2026-09-21
+updated: 2026-09-24
 source: "excerpt"
 ---
 
@@ -63,6 +63,36 @@ source: "excerpt"
 > Interfaces are good, but more, or larger, interfaces are not necessarily better!
 
 ^aphsd-ch04-quote-interfaces
+
+## Приклад: Unix файлові операції як глибокий модуль
+
+Інтерфейс Unix `open`, `read`, `write`, `close` приховує розміщення даних, кешування, черги запису, права доступу й роботу з пристроями. Клієнт читає файл через невеликий набір операцій:
+
+```c
+int fd = open("data.txt", O_RDONLY);
+char buf[1024];
+ssize_t n = read(fd, buf, sizeof(buf));
+if (n >= 0) { /* обробити n прочитаних байтів */ }
+close(fd);
+```
+
+Поверхнева обгортка лише повторює наявний інтерфейс:
+
+```java
+import java.io.IOException;
+import java.io.RandomAccessFile;
+
+class FileWrapper implements AutoCloseable {
+    private final RandomAccessFile file;
+    FileWrapper(String path) throws IOException { file = new RandomAccessFile(path, "r"); }
+    int read(byte[] buf) throws IOException { return file.read(buf); }
+    public void close() throws IOException { file.close(); }
+}
+```
+
+`FileWrapper` додає клас і контракт, але майже не приховує нової складності: клієнт усе ще має знати, як обробляти результат читання та помилки. Глибина модуля залежить від прихованої роботи відносно складності його інтерфейсу.
+
+^aphsd-ch04-example-unix-vs-wrapper
 
 ## Пов'язані концепти
 
