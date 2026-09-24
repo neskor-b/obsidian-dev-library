@@ -1,7 +1,7 @@
 ---
 type: concept
 scope: shared-evergreen
-sources: [a-philosophy-of-software-design, typescript-handbook]
+sources: [a-philosophy-of-software-design]
 title: "Декоратор додає поведінку через обгортання"
 aliases: ["Decorator", "Патерн Декоратор", "Decorator pattern in TypeScript"]
 tags: [concept, design-patterns, typescript]
