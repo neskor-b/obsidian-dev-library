@@ -185,7 +185,7 @@ public final class EmployeeFacade {
 ## Пов'язані концепти
 
 - [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
-- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[03-Maps/solid-and-clean-architecture-principles|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-01-design-and-architecture|Розділ 1. Що таке дизайн і архітектура]]
 
@@ -197,4 +197,4 @@ public final class EmployeeFacade {
 ## Пов'язані нотатки
 
 - [[02-Concepts/single-responsibility-means-one-actor#^single-responsibility-means-one-actor-definition|Спільний концепт про одного актора як справжній сенс SRP]]
-- [[02-Concepts/solid-organizes-modules-for-change#^solid-organizes-modules-for-change-definition|Оглядова нотатка про роль SOLID у mid-level дизайні]]
+- [[03-Maps/solid-and-clean-architecture-principles#^solid-organizes-modules-for-change-definition|Оглядова нотатка про роль SOLID у mid-level дизайні]]

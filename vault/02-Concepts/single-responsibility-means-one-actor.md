@@ -43,7 +43,7 @@ source: "synthesis"
 
 ## Пов'язані концепти
 
-- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[03-Maps/solid-and-clean-architecture-principles|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-01-design-and-architecture|Розділ 1. Що таке дизайн і архітектура]]
 

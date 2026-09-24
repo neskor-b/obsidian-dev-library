@@ -109,7 +109,7 @@ graph TD
 
 - [[02-Concepts/component-cohesion-balances-release-change-and-reuse|Зв'язність компонентів балансує реліз, змінюваність і повторне використання]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[03-Maps/solid-and-clean-architecture-principles|SOLID організовує модулі для змінюваності]]
 
 ## Джерело та продовження
 

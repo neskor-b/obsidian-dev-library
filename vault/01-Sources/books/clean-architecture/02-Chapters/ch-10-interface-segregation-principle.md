@@ -134,7 +134,7 @@ public final class User1 {
 ## Пов'язані концепти
 
 - [[02-Concepts/interface-segregation-avoids-dependencies-on-unused-operations|ISP ізолює клієнтів від невикористаних операцій]]
-- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[03-Maps/solid-and-clean-architecture-principles|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 
@@ -151,4 +151,4 @@ public final class User1 {
 ## Пов'язані нотатки
 
 - [[02-Concepts/interface-segregation-avoids-dependencies-on-unused-operations#^interface-segregation-definition|Спільний концепт про ізоляцію клієнтів від непотрібних операцій]]
-- [[02-Concepts/solid-organizes-modules-for-change#^solid-organizes-modules-for-change-definition|SOLID як набір правил для змінюваності модулів]]
+- [[03-Maps/solid-and-clean-architecture-principles#^solid-organizes-modules-for-change-definition|SOLID як набір правил для змінюваності модулів]]

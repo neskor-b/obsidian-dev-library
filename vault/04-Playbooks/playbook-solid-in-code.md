@@ -335,7 +335,7 @@ sequenceDiagram
 
 ## Пов'язані концепти
 
-- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[03-Maps/solid-and-clean-architecture-principles|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - [[02-Concepts/open-closed-protects-high-level-policy|OCP захищає high-level policy через ієрархію залежностей]]
 - [[02-Concepts/liskov-substitution-preserves-client-behavior|LSP зберігає поведінку клієнта при підстановці]]

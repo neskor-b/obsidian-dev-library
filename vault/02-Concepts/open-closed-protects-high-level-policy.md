@@ -64,7 +64,7 @@ flowchart BT
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[02-Concepts/single-responsibility-means-one-actor|SRP означає одного актора, а не одну дію]]
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]
-- [[02-Concepts/solid-organizes-modules-for-change|SOLID організовує модулі для змінюваності]]
+- [[03-Maps/solid-and-clean-architecture-principles|SOLID організовує модулі для змінюваності]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 
 ## Пов'язаний код
