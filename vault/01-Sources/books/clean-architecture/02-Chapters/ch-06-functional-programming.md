@@ -66,14 +66,10 @@ source: "excerpt"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems|Незмінність прибирає цілі класи проблем конкурентності]]
-- [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-03-paradigm-overview|Розділ 3. Огляд парадигм]]
 
 ## Джерело та продовження
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-05-object-oriented-programming|Попередній розділ: Об'єктно-орієнтоване програмування]]
 
-## Пов'язані нотатки
-
-- [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems#^clean-architecture-immutability-concurrency-definition|Локальний концепт про незмінність і concurrency]]

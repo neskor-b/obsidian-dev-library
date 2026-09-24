@@ -50,8 +50,7 @@ source: "excerpt"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
-- [[01-Sources/books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-03-paradigm-overview|Розділ 3. Огляд парадигм]]
 - [[02-Concepts/tests-falsify-not-prove-correctness|Тести спростовують помилки, а не доводять коректність]]
 
 ## Пов'язані приклади коду
@@ -65,5 +64,4 @@ source: "excerpt"
 
 ## Пов'язані нотатки
 
-- [[01-Sources/books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming#^clean-architecture-functional-decomposition-definition|Локальний концепт про декомпозицію]]
 - [[02-Concepts/tests-falsify-not-prove-correctness#^tests-falsify-not-prove-correctness-definition|Спільний концепт про тести й фальсифікацію]]

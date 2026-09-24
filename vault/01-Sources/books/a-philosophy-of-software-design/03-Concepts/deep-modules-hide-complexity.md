@@ -59,39 +59,18 @@ int page = request.getIntParameter("page");
 > [!note] Що таке поверхневий модуль
 > Це модуль, який бере на себе мало роботи, але додає нові виклики й правила, які потрібно вивчити. Наприклад, клас лише віддає внутрішню колекцію, а всю обробку залишає тому, хто його викликає. Для окремого класу має бути зрозуміла користь.
 
-## Уточнення з розділу 5
+## Де ще в книзі проявляється глибина
 
-Один зі способів зробити модуль глибшим — зібрати всередині нього пов’язані правила. У HTTP-прикладі модуль сам отримує й розбирає запит. Решта програми одразу працює з готовим запитом і не координує ці два кроки.
-
-> [!tip] Як перевірити
-> Яку роботу більше не потрібно робити в інших частинах програми завдяки цьому модулю?
-
-## Уточнення з розділу 6
-
-Загальна операція `delete(start, end)` замінює кілька вузьких методів для Backspace, Delete і виділення. Інтерфейс стає меншим, зберігаючи потрібні можливості. Проте одного методу для видалення одного символу недостатньо: якщо клієнтам доводиться писати цикли для діапазонів, модуль переклав забагато роботи назовні. Глибину слід оцінювати разом зі зручністю поточних сценаріїв.
-
-## Уточнення з розділу 7
-
-Глибина проявляється у відмінності між тим, що обіцяє API, і тим, як це реалізовано. Текстовий клас може зберігати рядки, але пропонувати вставку й видалення довільних діапазонів, приховуючи розділення та склеювання рядків. Метод, що лише пересилає той самий виклик іншому класу, такої роботи не виконує; диспетчер із такою самою сигнатурою може бути корисним завдяки вибору обробника.
-
-## Уточнення з розділу 9
-
-Глибина не залежить від довжини методу. Метод із п'ятьма незалежними 20-рядковими блоками можна читати блок за блоком без розділення на окремі методи; якщо ж блоки складно взаємодіють, розкидати їх по методах ще шкідливіше — читач буде постійно перемикатися між ними. Метод на сотні рядків прийнятний, якщо в нього проста сигнатура і його легко читати: це і є глибина — багато функціональності за простим інтерфейсом. Розділяти метод варто, лише коли результат дає чистішу абстракцію (окрему підзадачу або справді незалежні частини), а не просто тому, що метод довгий.
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-main-idea|Розділ 5]] — модуль стає глибшим, коли збирає пов'язані правила всередині (HTTP-приклад: отримання й розбір запиту разом).
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper#^aphsd-ch06-text-api|Розділ 6]] — `delete(start, end)` замінює вузькі методи, але надто вузький метод (видалення одного символу) перекладає роботу на клієнта.
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-07-different-layer-different-abstraction#^aphsd-ch07-interface-implementation|Розділ 7]] — глибина це різниця між обіцянкою API і реалізацією; простий проксі-виклик такої різниці не створює.
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-splitting-methods|Розділ 9.8]] — глибина не залежить від довжини методу: довгий метод із простою сигнатурою теж глибокий.
 
 ## Джерела
-
-- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-07-different-layer-different-abstraction#^aphsd-ch07-interface-implementation|Розділ 7. Інтерфейс і реалізація]]
-
-
-- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper#^aphsd-ch06-text-api|Розділ 6]]
-
-- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-05-information-hiding-and-leakage#^aphsd-ch05-main-idea|Розділ 5]]
-
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-main-idea]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-thesis-depth]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep#^aphsd-ch04-thesis-unix]]
-- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-splitting-methods|Розділ 9.8 — розділення та об'єднання методів]]
 
 ## Пов'язані концепти
 

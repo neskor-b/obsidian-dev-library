@@ -42,8 +42,7 @@ source: "synthesis"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
-- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-04-structured-programming|Розділ 4. Структурне програмування]]
 
 ## Пов'язаний код
 

@@ -49,8 +49,7 @@ source: "excerpt"
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
-- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-01-design-and-architecture|Розділ 1. Що таке дизайн і архітектура]]
 
 ## Пов'язані приклади коду
 
@@ -60,6 +59,3 @@ source: "excerpt"
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 
-## Пов'язані нотатки
-
-- [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline#^clean-architecture-paradigms-discipline-definition|Визначення дисциплінарної ролі парадигм]]

@@ -48,14 +48,6 @@ updated: 2026-04-21
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-12-components|Розділ 12. Компоненти]]
 - [[01-Sources/books/clean-architecture/02-Chapters/ch-13-component-cohesion|Розділ 13. Зв'язність компонентів]]
 
-## Локальні концепти
-
-- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
-- [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
-- [[01-Sources/books/clean-architecture/03-Concepts/functional-decomposition-needs-structured-programming|Функціональна декомпозиція потребує структурного програмування]]
-- [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
-- [[01-Sources/books/clean-architecture/03-Concepts/immutability-removes-classes-of-concurrency-problems|Незмінність прибирає цілі класи проблем конкурентності]]
-
 ## Міжджерельні концепти з цієї книги
 
 - [[02-Concepts/architecture-governs-cost-of-change|Архітектура визначає вартість змін]]

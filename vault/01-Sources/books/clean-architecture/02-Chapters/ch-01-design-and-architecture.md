@@ -48,10 +48,6 @@ source: "excerpt"
 
 ^clean-architecture-ch01-quote-speed
 
-## Пов'язані концепти
-
-- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum|Єдність дизайну й архітектури]]
-
 ## Пов'язані приклади коду
 
 - Окремі code notes для цього розділу ще не створені.
@@ -60,6 +56,3 @@ source: "excerpt"
 
 - [[01-Sources/books/clean-architecture/Clean Architecture (Robert C. Martin)|Нотатка книги]]
 
-## Пов'язані нотатки
-
-- [[01-Sources/books/clean-architecture/03-Concepts/design-architecture-continuum#^clean-architecture-design-continuum-definition|Визначення єдності дизайну й архітектури]]

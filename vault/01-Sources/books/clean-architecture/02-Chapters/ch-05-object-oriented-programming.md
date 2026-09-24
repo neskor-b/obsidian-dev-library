@@ -78,8 +78,7 @@ int getchar() {
 
 ## Пов'язані концепти
 
-- [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism|ООП дає контроль над напрямком залежностей через поліморфізм]]
-- [[01-Sources/books/clean-architecture/03-Concepts/paradigms-impose-discipline|Парадигми вводять дисципліну через обмеження]]
+- [[01-Sources/books/clean-architecture/02-Chapters/ch-03-paradigm-overview|Розділ 3. Огляд парадигм]]
 - [[02-Concepts/dependency-inversion|Інверсія залежностей]]
 - [[02-Concepts/plugin-architecture-via-polymorphism|Поліморфізм дозволяє будувати plugin architecture]]
 
@@ -90,6 +89,5 @@ int getchar() {
 
 ## Пов'язані нотатки
 
-- [[01-Sources/books/clean-architecture/03-Concepts/oo-controls-dependency-direction-through-polymorphism#^clean-architecture-oop-dependencies-definition|Локальна теза про архітектурний сенс OO]]
 - [[02-Concepts/dependency-inversion#^dependency-inversion-definition|Спільний концепт про розворот залежностей]]
 - [[02-Concepts/plugin-architecture-via-polymorphism#^plugin-architecture-via-polymorphism-definition|Спільний концепт про плагінну архітектуру]]

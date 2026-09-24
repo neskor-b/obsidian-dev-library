@@ -32,9 +32,6 @@ source: "https://www.systemdesignhandbook.com/guides/system-design/"
 
 - [[01-Sources/articles/system-design-handbook-system-design/02-Notes/system-design-starts-with-requirements-and-trade-offs|System design починається з вимог і trade-offs]]
 
-## Локальні концепти
-
-
 ## Пов'язані playbooks
 
 - [[04-Playbooks/approach-a-system-design-problem|Як підходити до задачі system design]]
