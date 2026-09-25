@@ -51,6 +51,8 @@ updated: 2026-09-25
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-13-comments-describe-the-nonobvious|Розділ 13. Коментарі мають пояснювати неочевидне з коду]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names|Розділ 14. Вибір назв]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]

@@ -13,7 +13,7 @@ tags:
   - source-note
   - concept
 created: 2026-07-26
-updated: 2026-09-24
+updated: 2026-09-25
 source: "chapter-2-excerpt"
 ---
 
@@ -35,6 +35,8 @@ source: "chapter-2-excerpt"
 
 ^aphsd-complexity-incremental-example
 
+У розділі 14 автор показує той самий ефект на назвах: одна посередня назва може майже не впливати на систему, але тисячі неточних назв накопичують неоднозначність. Регулярний вибір точних і послідовних назв — невелика інвестиція в зниження майбутньої складності.
+
 ## Ознаки в коді
 
 - Нові special cases регулярно додаються як «тимчасові» винятки.
@@ -49,6 +51,8 @@ source: "chapter-2-excerpt"
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-02-nature-of-complexity#^aphsd-ch02-rule-zero-tolerance]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-thesis-patch-cycle]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming#^aphsd-ch03-rule-fix-now]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names#^aphsd-ch14-incremental|Розділ 14 — накопичувальний ефект вибору назв]]
 
 ## Пов'язані концепти
 

@@ -71,6 +71,9 @@ function validateInviteEmail(email) {
 - **Коментар повторює код (Comment Repeats Code, розділ 13.2):** пояснення лише переказує сусідній код або назву, не додаючи знань про значення чи задум.
 - **Реалізація засмічує документацію інтерфейсу (Implementation Documentation Contaminates Interface, розділ 13.5):** опис містить внутрішні подробиці, які не потрібні для використання модуля.
 
+- **Нечітка назва (Vague Name, розділ 14.3):** назва підходить багатьом різним сутностям і не дає читачеві надійної підказки про значення.
+- **Важко підібрати назву (Hard to Pick Name, розділ 14.3):** труднощі з простою точною назвою можуть вказувати на нечітке призначення сутності або змішування кількох понять.
+
 ## Джерела
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-red-flags]]
@@ -81,6 +84,9 @@ function validateInviteEmail(email) {
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-13-comments-describe-the-nonobvious#^aphsd-ch13-repeats-code|Розділ 13.2 — Comment Repeats Code]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-13-comments-describe-the-nonobvious#^aphsd-ch13-interface-contamination|Розділ 13.5 — Implementation Documentation Contaminates Interface]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names#^aphsd-ch14-vague-name|Розділ 14.3 — Vague Name]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names#^aphsd-ch14-hard-to-pick-name|Розділ 14.3 — Hard to Pick Name]]
 
 ## Пов'язані концепти
 
