@@ -11,7 +11,7 @@ tags:
   - source-note
   - index
 created: 2026-03-24
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 
 # A Philosophy of Software Design
@@ -44,6 +44,8 @@ updated: 2026-09-24
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-08-pull-complexity-downwards|Розділ 8. Перенось складність усередину модуля]]
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart|Розділ 9. Разом чи окремо?]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-11-design-it-twice|Розділ 11. Проєктуй двічі]]
 
 ## Локальні концепти
 
