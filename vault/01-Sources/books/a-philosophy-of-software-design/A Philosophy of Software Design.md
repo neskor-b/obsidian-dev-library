@@ -47,6 +47,8 @@ updated: 2026-09-25
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-11-design-it-twice|Розділ 11. Проєктуй двічі]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-12-why-write-comments|Розділ 12. Навіщо писати коментарі? Чотири виправдання]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]

@@ -14,8 +14,8 @@ tags:
   - source-note
   - concept
 created: 2026-07-26
-updated: "2026-09-22"
-source: "chapter-4-5-and-6-excerpts"
+updated: "2026-09-25"
+source: "chapter-4-5-6-and-12-excerpts"
 ---
 
 # Абстракції мають зберігати важливі деталі
@@ -61,7 +61,15 @@ source: "chapter-4-5-and-6-excerpts"
 
 Той самий принцип пояснює, чому [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper#^aphsd-ch06-false-abstraction|`backspace(cursor)` у розділі 6]] є хибною абстракцією: вона приховує рішення, яке насправді потрібне його викликачу.
 
+## Уточнення з розділу 12
+
+Коментарі доповнюють оголошення методу правилами, потрібними для правильного виклику. Наприклад, параметри `start` і `end` ще не пояснюють, чи входить кінцева позиція в підрядок і що відбувається за `start > end`. Якщо ці правила доводиться відновлювати з реалізації, абстракція не приховала її складність від користувача.
+
+^aphsd-abstraction-comments
+
 ## Джерела
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-12-why-write-comments#^aphsd-ch12-comments-complete-abstraction|Розділ 12: коментарі завершують абстракцію]]
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-06-general-purpose-modules-are-deeper#^aphsd-ch06-false-abstraction|Розділ 6]]
 
