@@ -384,4 +384,4 @@ export type ErrorCode =
 
 - [[01-Sources/books/a-philosophy-of-software-design/A Philosophy of Software Design|Нотатка книги]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-12-why-write-comments|Розділ 12. Навіщо писати коментарі?]] — навіщо зберігати знання, які не виражені в коді.
-- У наданому тексті автор відсилає до розділу 15 щодо документації як інструмента дизайну та розділу 16 щодо уникнення дублювання коментарів.
+- У наданому тексті автор відсилає до [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-15-write-the-comments-first|розділу 15]] щодо документації як інструмента дизайну та розділу 16 щодо уникнення дублювання коментарів.

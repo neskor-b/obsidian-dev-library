@@ -74,6 +74,8 @@ function validateInviteEmail(email) {
 - **Нечітка назва (Vague Name, розділ 14.3):** назва підходить багатьом різним сутностям і не дає читачеві надійної підказки про значення.
 - **Важко підібрати назву (Hard to Pick Name, розділ 14.3):** труднощі з простою точною назвою можуть вказувати на нечітке призначення сутності або змішування кількох понять.
 
+- **Важко описати (Hard to Describe, розділ 15.3):** якщо метод або змінну не вдається описати просто й повно, перевір абстракцію та поділ даних. Неповний або незрозумілий короткий коментар не свідчить про простоту інтерфейсу.
+
 ## Джерела
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-red-flags]]
@@ -87,6 +89,8 @@ function validateInviteEmail(email) {
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names#^aphsd-ch14-vague-name|Розділ 14.3 — Vague Name]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names#^aphsd-ch14-hard-to-pick-name|Розділ 14.3 — Hard to Pick Name]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-15-write-the-comments-first#^aphsd-ch15-hard-to-describe|Розділ 15.3 — Hard to Describe]]
 
 ## Пов'язані концепти
 

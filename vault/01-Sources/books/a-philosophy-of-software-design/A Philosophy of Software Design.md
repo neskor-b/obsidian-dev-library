@@ -53,6 +53,8 @@ updated: 2026-09-25
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-14-choosing-names|Розділ 14. Вибір назв]]
 
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-15-write-the-comments-first|Розділ 15. Спочатку пиши коментарі]]
+
 ## Локальні концепти
 
 - [[01-Sources/books/a-philosophy-of-software-design/03-Concepts/design-is-continuous-and-incremental|Дизайн є безперервним та інкрементальним]]
