@@ -14,7 +14,7 @@ tags:
   - source-note
   - concept
 created: 2026-03-24
-updated: 2026-09-24
+updated: 2026-09-25
 source: "chapter-1-excerpt"
 ---
 
@@ -68,6 +68,9 @@ function validateInviteEmail(email) {
 - **Змішування загального та спеціального (Special-General Mixture, розділ 9.4):** загальний механізм містить код, спеціалізований під один конкретний випадок використання; це створює витік інформації між механізмом і випадком використання.
 - **Зрощені методи (Conjoined Methods, розділ 9.8):** неможливо зрозуміти реалізацію одного методу чи фрагмента, не читаючи інший — вони піддаються розумінню лише разом.
 
+- **Коментар повторює код (Comment Repeats Code, розділ 13.2):** пояснення лише переказує сусідній код або назву, не додаючи знань про значення чи задум.
+- **Реалізація засмічує документацію інтерфейсу (Implementation Documentation Contaminates Interface, розділ 13.5):** опис містить внутрішні подробиці, які не потрібні для використання модуля.
+
 ## Джерела
 
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-01-introduction-complexity#^aphsd-ch01-thesis-red-flags]]
@@ -75,6 +78,9 @@ function validateInviteEmail(email) {
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-duplication|Розділ 9.3 — Repetition]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-ch09-general-special|Розділ 9.4 — Special-General Mixture]]
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-09-better-together-or-better-apart#^aphsd-conjoined-methods-flag|Розділ 9.8 — Conjoined Methods]]
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-13-comments-describe-the-nonobvious#^aphsd-ch13-repeats-code|Розділ 13.2 — Comment Repeats Code]]
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-13-comments-describe-the-nonobvious#^aphsd-ch13-interface-contamination|Розділ 13.5 — Implementation Documentation Contaminates Interface]]
 
 ## Пов'язані концепти
 

@@ -108,3 +108,5 @@ source: chapter-12-excerpt
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-03-strategic-vs-tactical-programming|Розділ 3. Стратегічне й тактичне програмування]] — інвестиція в майбутній супровід.
 - [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-04-modules-should-be-deep|Розділ 4. Модулі мають бути глибокими]] — неформальна частина інтерфейсу та приховування складності.
 - Далі автор анонсує написання хороших коментарів у розділі 13, вибір назв у 14, документацію як інструмент дизайну в 15 та її підтримку в 16. Ці теми тут лише окреслено.
+
+- [[01-Sources/books/a-philosophy-of-software-design/02-Chapters/ch-13-comments-describe-the-nonobvious|Розділ 13. Коментарі мають пояснювати неочевидне з коду]] — точність, задум, контракт і міжмодульні рішення.
